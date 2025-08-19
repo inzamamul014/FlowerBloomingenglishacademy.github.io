@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - School Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notices.html">Notices</a>
+    <a href="homework.html">Homework</a>
+    <a href="admission.html">Admission</a>
+    <a href="login.html" id="auth-link">Login</a>
+  </nav>
+  <div class="container">
+    <h2>Admission Application</h2>
+    <form id="admission-form">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+      <button type="submit">Submit Application</button>
+    </form>
+    <p id="admission-message"></p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
