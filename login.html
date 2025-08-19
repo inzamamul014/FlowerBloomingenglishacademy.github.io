@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - School Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notices.html">Notices</a>
+    <a href="homework.html">Homework</a>
+    <a href="admission.html">Admission</a>
+    <a href="login.html" id="auth-link">Login</a>
+  </nav>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <select id="user-type">
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+      </select>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-message" style="color: red;"></p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
