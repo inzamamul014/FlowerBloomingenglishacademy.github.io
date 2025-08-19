@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background: #007bff;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
